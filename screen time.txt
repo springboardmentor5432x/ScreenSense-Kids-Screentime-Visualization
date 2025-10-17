@@ -1,8 +1,4 @@
-# -------------------------------------------------------------
-# SCREEN SENSE – Kids Screentime Visualization
-# Milestone 1: Data Foundation and Cleaning
-# Week 1: Project Initialization and Dataset Setup
-# -------------------------------------------------------------
+
 
 # STEP 1: Import Required Libraries
 import pandas as pd
@@ -14,42 +10,37 @@ import seaborn as sns
 pd.set_option('display.max_columns', None)
 pd.set_option('display.precision', 2)
 
-print("✅ Libraries imported successfully")
+print(" Libraries imported successfully")
 
-# STEP 2: Load the Dataset
-# -------------------------------------------------------------
-# Download the dataset from Kaggle and place in the same folder
-# Kaggle URL: https://www.kaggle.com/datasets/ankushpanday2/indian-kids-screentime-2025
-# Example filename: Indian_Kids_Screentime_2025.csv
-# -------------------------------------------------------------
+
 file_path = "Indian_Kids_Screentime_2025.csv"
 
 try:
     df = pd.read_csv(file_path)
-    print("✅ Dataset loaded successfully!")
+    print(" Dataset loaded successfully!")
 except FileNotFoundError:
-    print("❌ Dataset not found. Please check your file path.")
+    print(" Dataset not found. Please check your file path.")
 
 # STEP 3: Quick Preview of the Data
-print("\n🔹 First 5 Rows of Dataset:")
+print("\n First 5 Rows of Dataset:")
 display(df.head())
 
 # STEP 4: Dataset Basic Info
-print("\n🔹 Dataset Information:")
+print("\n Dataset Information:")
 print(df.info())
 
-print("\n🔹 Shape of Dataset:")
+print("\n Shape of Dataset:")
 print(f"Rows: {df.shape[0]} | Columns: {df.shape[1]}")
 
 # STEP 5: Summary Statistics
-print("\n🔹 Summary Statistics (Numerical Columns):")
+print("\n Summary Statistics (Numerical Columns):")
 display(df.describe())
 
-print("\n🔹 Summary Statistics (Categorical Columns):")
+print("\n Summary Statistics (Categorical Columns):")
 display(df.describe(include=['object']))
 
 # STEP 6: Checking for Missing Values
-print("\n🔹 Missing Values per Column:")
+print("\n Missing Values per Column:")
 print(df.isnull().sum())
 
 total_missing = df.isnull().sum().sum()
@@ -57,14 +48,14 @@ print(f"\nTotal Missing Values in Dataset: {total_missing}")
 
 # STEP 7: Check for Duplicate Records
 duplicates = df.duplicated().sum()
-print(f"\n🔹 Duplicate Rows Found: {duplicates}")
+print(f"\n Duplicate Rows Found: {duplicates}")
 
 # STEP 8: Explore Unique Values in Categorical Columns
-print("\n🔹 Unique Values in Categorical Columns:")
+print("\n Unique Values in Categorical Columns:")
 categorical_cols = df.select_dtypes(include='object').columns
 
 for col in categorical_cols:
-    print(f"\n▶ {col} ({df[col].nunique()} unique values):")
+    print(f"\n >{col} ({df[col].nunique()} unique values):")
     print(df[col].unique()[:10])
 
 # STEP 9: Quick Data Distribution Check
@@ -102,10 +93,10 @@ display(report_df)
 
 # STEP 13: Save Initial Report
 report_df.to_csv("Week1_Initial_Data_Report.csv", index=False)
-print("\n📁 'Week1_Initial_Data_Report.csv' saved successfully!")
+print("\n 'Week1_Initial_Data_Report.csv' saved successfully!")
 
 # STEP 14: Record Initial Observations
-print("\n✅ INITIAL OBSERVATIONS & NOTES")
+print("\n INITIAL OBSERVATIONS & NOTES")
 print("""
 1. Dataset loaded successfully with expected columns such as:
    - Age, Gender, Location, Device_Type, Day, Activity_Category, Screen_Time.
@@ -118,3 +109,4 @@ print("""
 """)
 
 print("\n🎯 Week 1 – Dataset Setup & Initial Exploration Completed Successfully!")
+
