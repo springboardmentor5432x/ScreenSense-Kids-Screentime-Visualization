@@ -52,4 +52,4 @@ Analyzing this dataset helps parents, teachers, and policymakers understand tren
 ---
 
 ## Project Type
-- **Infosys Springboard Data Visualization Project**
+- **Infosys Springboard Data Visualization Internship Project**
