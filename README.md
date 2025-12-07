@@ -5,7 +5,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Batch](https://img.shields.io/badge/Batch-Infosys%20Springboard%206.0-blue)
-![Duration](https://img.shields.io/badge/Duration-6%20Weeks-orange)
+![Duration](https://img.shields.io/badge/Duration-8%20Weeks-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-9712%20Records-yellowgreen)
 
 ---
