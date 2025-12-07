@@ -423,9 +423,9 @@ jupyter notebook
 ## 📞 Contact & Support
 
 **Project Lead:** Afzal Hussain S  
-**Email:** [Your Email]  
-**LinkedIn:** [Your LinkedIn]  
-**GitHub:** [Your GitHub]
+**Email:** afzalmysss321@gmail.com 
+**LinkedIn:** https://www.linkedin.com/in/afzalhussains
+
 
 **Mentor:** Sirisha  
 **Organization:** Infosys Springboard 6.0 - Batch 4  
